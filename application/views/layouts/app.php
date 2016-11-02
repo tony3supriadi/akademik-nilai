@@ -203,6 +203,8 @@
 <script src="<?=base_url('/assets/plugins/jvectormap/jquery-jvectormap-world-mill-en.js')?>"></script>
 <!-- jQuery Knob Chart -->
 <script src="<?=base_url('/assets/plugins/knob/jquery.knob.js')?>"></script>
+<!-- Select2 -->
+<script src="<?=base_url('/assets/plugins/select2/select2.full.min.js')?>"></script>
 <!-- daterangepicker -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
 <script src="<?=base_url('/assets/plugins/daterangepicker/daterangepicker.js')?>"></script>
@@ -229,6 +231,7 @@
 <script src="<?=base_url('/assets/dist/js/demo.js')?>"></script>
 
 <script>
+
     // DataTable Selected
     $("#table-data").DataTable();
     $("#table-report").DataTable({
@@ -236,6 +239,9 @@
       "lengthChange": false,
       "searching": false,
     }); 
+
+    //Initialize Select2 Elements
+    $(".select2").select2();
 
     // Date picker
     $('#date_picker').datepicker({

@@ -27,6 +27,12 @@
   <link rel="stylesheet" href="<?=base_url('/assets/plugins/datatables/dataTables.bootstrap.css')?>">
   <!-- Date Picker -->
   <link rel="stylesheet" href="<?=base_url('/assets/plugins/datepicker/datepicker3.css')?>">
+  <!-- iCheck for checkboxes and radio inputs -->
+  <link rel="stylesheet" href="<?=base_url('/assets/plugins/iCheck/all.css')?>">
+  <!-- bootstrap datepicker -->
+  <link rel="stylesheet" href="<?=base_url('/assets/plugins/datepicker/datepicker3.css')?>">
+  <!-- Select2 -->
+  <link rel="stylesheet" href="<?=base_url('/assets/plugins/select2/select2.min.css')?>">
   <!-- Daterange picker -->
   <link rel="stylesheet" href="<?=base_url('/assets/plugins/daterangepicker/daterangepicker.css')?>">
   <!-- bootstrap wysihtml5 - text editor -->
@@ -207,8 +213,12 @@
 <script src="<?=base_url('/assets/plugins/datepicker/bootstrap-datepicker.js')?>"></script>
 <!-- Bootstrap WYSIHTML5 -->
 <script src="<?=base_url('/assets/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js')?>"></script>
+<!-- bootstrap datepicker -->
+<script src="<?=base_url('/assets/plugins/datepicker/bootstrap-datepicker.js')?>"></script>
 <!-- Slimscroll -->
 <script src="<?=base_url('/assets/plugins/slimScroll/jquery.slimscroll.min.js')?>"></script>
+<!-- iCheck 1.0.1 -->
+<script src="<?=base_url('/assets/plugins/iCheck/icheck.min.js')?>"></script>
 <!-- FastClick -->
 <script src="<?=base_url('/assets/plugins/fastclick/fastclick.js')?>"></script>
 <!-- AdminLTE App -->
@@ -217,13 +227,27 @@
 <script src="<?=base_url('/assets/dist/js/pages/dashboard.js')?>"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="<?=base_url('/assets/dist/js/demo.js')?>"></script>
+
 <script>
+    // DataTable Selected
     $("#table-data").DataTable();
     $("#table-report").DataTable({
       "pageLength": 50,
       "lengthChange": false,
       "searching": false,
-    });    
+    }); 
+
+    // Date picker
+    $('#date_picker').datepicker({
+      autoclose: true
+    });   
+
+    // Flat red color scheme for iCheck
+    $('input[type="checkbox"].flat-red, input[type="radio"].flat-red').iCheck({
+      checkboxClass: 'icheckbox_flat-green',
+      radioClass: 'iradio_flat-green'
+    });
 </script>
+
 </body>
 </html>

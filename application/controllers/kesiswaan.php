@@ -15,4 +15,13 @@ Class Kesiswaan extends CI_Controller {
 		$this->load->view("/layouts/app", $data);
 	}
 
+	public function add() {
+		$data = array(
+			"title" => "ADD - KESISWAAN",
+			"navigation" => "kesiswaan",
+			"container" => "/administrator/kesiswaan/add"
+		);
+		$this->load->view("/layouts/app", $data);
+	}
+
 }

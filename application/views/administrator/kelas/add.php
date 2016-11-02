@@ -14,18 +14,40 @@
     <!-- Main content -->
     <section class="content">
       <div class="row">
-        <div class="col-xs-12">
+        <div class="col-xs-8 col-xs-offset-2">
           <div class="box">
-            <form action="" method="POST">
-              <div class="box-header">
-                <h3 class="box-title">Form Data Kelas</h3>
+            <form action="" method="POST" class="form-horizontal">
+              <div class="box-header text-center">
+                <h3 class="box-title">FORM : INFORMASI KELAS</h3>
               </div>
               <!-- /.box-header -->
               <div class="box-body">
-                <div class="row">
-                  <div class="col-md-6"></div>
-                  <div class="col-md-6"></div>
-                </div>
+                  <h5 class="col-xs-offset-1"><b>A. KETERANGAN INFORMASI DATA KELAS</b></h5>
+                  <hr style="padding: 5px 0; margin: 5px 0;" />
+                  <div class="form-group">
+                    <label for="kode_kelas" class="col-sm-3 control-label">KODE KELAS</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" id="kode_kelas" name="kode_kelas" placeholder="Kode Kelas">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="kelas" class="col-sm-3 control-label">KELAS</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" id="kelas" name="kelas" placeholder="Kelas : X / XI / XII">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="kategori_kelas" class="col-sm-3 control-label">KATEGORI KELAS</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" id="kategori_kelas" name="kategori_kelas" placeholder="Kategori Kelas : IPA / IPS">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="nama_kelas" class="col-sm-3 control-label">NAMA KELAS</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" id="nama_kelas" name="nama_kelas" placeholder="Nama Kelas (ex. XII IPA 1)">
+                    </div>
+                  </div>
               </div>
               <div class="box-footer">
                 <button type="submit" class="btn btn-primary pull-right"><i class="fa fa-save"></i>&nbsp; SIMPAN</button>

@@ -17,7 +17,7 @@
           <div class="box">
             <div class="box-header">
               <h3 class="box-title">Tabel Data Kesiswaan</h3>
-              <a href="<?=base_url('/kelas/add.html')?>" class="btn btn-primary pull-right">
+              <a href="<?=base_url('/kesiswaan/add.html')?>" class="btn btn-primary pull-right">
                 <i class="fa fa-plus"></i> Tambah Kesiswaan
               </a>
             </div>

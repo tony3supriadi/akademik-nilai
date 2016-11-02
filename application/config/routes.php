@@ -5,6 +5,9 @@ $route['default_controller'] = 'home';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = TRUE;
 
+$route['profil/(:any)'] = '/users/profil/$1';
+$route['laporan/kesiswaan.html'] = '/laporan/kesiswaan_report';
+
 /*
 | -------------------------------------------------------------------------
 | Sample REST API Routes

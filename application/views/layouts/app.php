@@ -23,6 +23,8 @@
   <link rel="stylesheet" href="<?=base_url('/assets/plugins/morris/morris.css')?>">
   <!-- jvectormap -->
   <link rel="stylesheet" href="<?=base_url('/assets/plugins/jvectormap/jquery-jvectormap-1.2.2.css')?>">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="<?=base_url('/assets/plugins/datatables/dataTables.bootstrap.css')?>">
   <!-- Date Picker -->
   <link rel="stylesheet" href="<?=base_url('/assets/plugins/datepicker/datepicker3.css')?>">
   <!-- Daterange picker -->
@@ -69,7 +71,7 @@
               <!-- Menu Footer-->
               <li class="user-footer">
                 <div class="pull-left">
-                  <a href="<?=base_url('/profile/')?>" class="btn btn-default btn-flat">Profile</a>
+                  <a href="<?=base_url('/profil/QW1yaXphbCBGYXRodXJvaG1hbg.html')?>" class="btn btn-default btn-flat">Profil</a>
                 </div>
                 <div class="pull-right">
                   <a href="<?=base_url('/logout.html')?>" class="btn btn-default btn-flat">Sign out</a>
@@ -92,7 +94,7 @@
         </div>
         <div class="pull-left info">
           <p>Alexander Pierce</p>
-          <a href="<?=base_url('/profile/')?>" class="btn btn-xs btn-info">Profile</a>
+          <a href="<?=base_url('/profil/QW1yaXphbCBGYXRodXJvaG1hbg.html')?>" class="btn btn-xs btn-info">Profil</a>
           <a href="<?=base_url('/logout.html')?>" class="btn btn-xs btn-danger">Logout</a>
         </div>
       </div>
@@ -198,6 +200,9 @@
 <!-- daterangepicker -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
 <script src="<?=base_url('/assets/plugins/daterangepicker/daterangepicker.js')?>"></script>
+<!-- DataTables -->
+<script src="<?=base_url('/assets/plugins/datatables/jquery.dataTables.min.js')?>"></script>
+<script src="<?=base_url('/assets/plugins/datatables/dataTables.bootstrap.min.js')?>"></script>
 <!-- datepicker -->
 <script src="<?=base_url('/assets/plugins/datepicker/bootstrap-datepicker.js')?>"></script>
 <!-- Bootstrap WYSIHTML5 -->
@@ -212,5 +217,13 @@
 <script src="<?=base_url('/assets/dist/js/pages/dashboard.js')?>"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="<?=base_url('/assets/dist/js/demo.js')?>"></script>
+<script>
+    $("#table-data").DataTable();
+    $("#table-report").DataTable({
+      "pageLength": 50,
+      "lengthChange": false,
+      "searching": false,
+    });    
+</script>
 </body>
 </html>

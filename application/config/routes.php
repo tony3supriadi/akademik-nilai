@@ -8,6 +8,9 @@ $route['translate_uri_dashes'] = TRUE;
 $route['profil/(:any)'] = '/users/profil/$1';
 $route['laporan/kesiswaan.html'] = '/laporan/kesiswaan_report';
 
+$route['nilai/(:any)'] = '/nilai/index/$1';
+$route['nilai/(:any)/input/(:any)'] = '/nilai/input/$1/$2';
+
 /*
 | -------------------------------------------------------------------------
 | Sample REST API Routes

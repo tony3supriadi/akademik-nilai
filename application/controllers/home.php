@@ -15,4 +15,13 @@ Class Home extends CI_Controller {
 		$this->load->view("/layouts/app", $data);
 	}
 
+	public function guru() {
+		$data = array(
+			"title" => "HOME",
+			"navigation" => "guru_home",
+			"container" => "/guru/home/index"
+		);
+		$this->load->view("/layouts/app", $data);
+	}
+
 }

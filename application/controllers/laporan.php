@@ -96,4 +96,13 @@ Class Laporan extends CI_Controller {
 		$this->load->view("/layouts/app", $data);
 	}
 
+	public function nilai() {
+		$data = array(
+			"title" => "LAPORAN NILAI",
+			"navigation" => "guru_laporan",
+			"container" => "/guru/laporan/nilai"
+		);
+		$this->load->view("/layouts/app", $data);
+	}
+
 }

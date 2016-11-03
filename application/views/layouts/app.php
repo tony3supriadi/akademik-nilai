@@ -117,51 +117,87 @@
 
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu">
+        
         <li class="header">MAIN NAVIGATION</li>
+        
         <li <?php if ($navigation == "home") echo "class='active'"?>>
           <a href="<?=base_url()?>">
-            <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+            <i class="fa fa-dashboard"></i> <span>DASHBOARD</span>
           </a>
         </li>
         <li class="treeview <?php if ($navigation == "master") echo "active"?>">
           <a href="">
             <i class="fa fa-th"></i>
-            <span>Data Master</span>
+            <span>DATA MASTER</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<?=base_url('/siswa.html')?>"><i class="fa fa-circle-o"></i> Data Siswa</a></li>
-            <li><a href="<?=base_url('/guru.html')?>"><i class="fa fa-circle-o"></i> Data Guru</a></li>
-            <li><a href="<?=base_url('/pelajaran.html')?>"><i class="fa fa-circle-o"></i> Pelajaran</a></li>
-            <li><a href="<?=base_url('/kelas.html')?>"><i class="fa fa-circle-o"></i> Kelas</a></li>
-            <li><a href="<?=base_url('/users.html')?>"><i class="fa fa-circle-o"></i> Users</a></li>
+            <li><a href="<?=base_url('/siswa.html')?>"><i class="fa fa-circle-o"></i> DATA SISWA</a></li>
+            <li><a href="<?=base_url('/guru.html')?>"><i class="fa fa-circle-o"></i> DATA GURU</a></li>
+            <li><a href="<?=base_url('/pelajaran.html')?>"><i class="fa fa-circle-o"></i> PELAJARAN</a></li>
+            <li><a href="<?=base_url('/kelas.html')?>"><i class="fa fa-circle-o"></i> KELAS</a></li>
+            <li><a href="<?=base_url('/users.html')?>"><i class="fa fa-circle-o"></i> USERS</a></li>
           </ul>
         </li>
         <li <?php if ($navigation == "kesiswaan") echo "class='active'"?>>
           <a href="<?=base_url('/kesiswaan.html')?>">
-            <i class="fa fa-group"></i> <span>Kesiswaan</span>
+            <i class="fa fa-group"></i> <span>KESISWAAN</span>
           </a>
         </li>
         <li class="treeview <?php if ($navigation == "laporan") echo "active"?>">
           <a href="">
             <i class="fa fa-pie-chart"></i>
-            <span>Laporan</span>
+            <span>LAPORAN</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<?=base_url('/laporan/siswa.html')?>"><i class="fa fa-circle-o"></i> Data Siswa</a></li>
-            <li><a href="<?=base_url('/laporan/guru.html')?>"><i class="fa fa-circle-o"></i> Data Guru</a></li>
-            <li><a href="<?=base_url('/laporan/pelajaran.html')?>"><i class="fa fa-circle-o"></i> Pelajaran</a></li>
-            <li><a href="<?=base_url('/laporan/kelas.html')?>"><i class="fa fa-circle-o"></i> Kelas</a></li>
-            <li><a href="<?=base_url('/laporan/kesiswaan.html')?>"><i class="fa fa-circle-o"></i> Kesiswaan</a></li>
-            <li><a href="<?=base_url('/laporan/penilaian.html')?>"><i class="fa fa-circle-o"></i> Penilaian</a></li>
-            <li><a href="<?=base_url('/laporan/users.html')?>"><i class="fa fa-circle-o"></i> Users</a></li>
+            <li><a href="<?=base_url('/laporan/siswa.html')?>"><i class="fa fa-circle-o"></i> DATA SISWA</a></li>
+            <li><a href="<?=base_url('/laporan/guru.html')?>"><i class="fa fa-circle-o"></i> DATA GURU</a></li>
+            <li><a href="<?=base_url('/laporan/pelajaran.html')?>"><i class="fa fa-circle-o"></i> PELAJARAN</a></li>
+            <li><a href="<?=base_url('/laporan/kelas.html')?>"><i class="fa fa-circle-o"></i> KELAS</a></li>
+            <li><a href="<?=base_url('/laporan/kesiswaan.html')?>"><i class="fa fa-circle-o"></i> KESISWAAN</a></li>
+            <li><a href="<?=base_url('/laporan/penilaian.html')?>"><i class="fa fa-circle-o"></i> PENILAIAN</a></li>
+            <li><a href="<?=base_url('/laporan/users.html')?>"><i class="fa fa-circle-o"></i> USERS</a></li>
           </ul>
         </li>
+
+        <li class="header">AKSES GURU NAVIGATION</li>
+        
+        <li <?php if ($navigation == "guru_home") echo "class='active'"?>>
+          <a href="<?=base_url('/home/guru')?>">
+            <i class="fa fa-dashboard"></i> <span>DASHBOARD</span>
+          </a>
+        </li>
+        <li class="treeview <?php if ($navigation == "guru_mata_pelajaran") echo "active"?>">
+          <a href="">
+            <i class="fa fa-book"></i>
+            <span>MATA PELAJARAN</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="<?=base_url('/nilai/QmFoYXNhIEphd2E.html')?>"><i class="fa fa-circle-o"></i> BAHASA JAWA</a></li>
+            <li><a href="<?=base_url('/nilai/QmFoYXNhIEplcm1hbg.html')?>"><i class="fa fa-circle-o"></i> BAHASA JERMAN</a></li>
+          </ul>
+        </li>
+        <li class="treeview <?php if ($navigation == "guru_laporan") echo "active"?>">
+          <a href="">
+            <i class="fa fa-pie-chart"></i>
+            <span>LAPORAN</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="<?=base_url('/laporan/nilai.html')?>"><i class="fa fa-circle-o"></i> DATA NILAI</a></li>
+          </ul>
+        </li>
+
       </ul>
     </section>
     <!-- /.sidebar -->

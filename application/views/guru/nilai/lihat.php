@@ -46,14 +46,14 @@
                   <tr>
                     <th>NIS</th>
                     <th>NAMA LENGKAP</th>
-                    <th>T1</th>
-                    <th>T2</th>
-                    <th>UH1</th>
-                    <th>UH2</th>
-                    <th>UH3</th>
-                    <th>UH4</th>
-                    <th>UTS</th>
-                    <th>UAS</th>
+                    <th><a href="<?=base_url('/nilai/input/bahasa_jawa/x_ipa_1')?>" title="Edit Nilai">T1</a></th>
+                    <th><a href="<?=base_url('/nilai/input/bahasa_jawa/x_ipa_1')?>" title="Edit Nilai">T2</a></th>
+                    <th><a href="<?=base_url('/nilai/input/bahasa_jawa/x_ipa_1')?>" title="Edit Nilai">UH1</a></th>
+                    <th><a href="<?=base_url('/nilai/input/bahasa_jawa/x_ipa_1')?>" title="Edit Nilai">UH2</a></th>
+                    <th><a href="<?=base_url('/nilai/input/bahasa_jawa/x_ipa_1')?>" title="Edit Nilai">UH3</a></th>
+                    <th><a href="<?=base_url('/nilai/input/bahasa_jawa/x_ipa_1')?>" title="Edit Nilai">UH4</a></th>
+                    <th><a href="<?=base_url('/nilai/input/bahasa_jawa/x_ipa_1')?>" title="Edit Nilai">UTS</a></th>
+                    <th><a href="<?=base_url('/nilai/input/bahasa_jawa/x_ipa_1')?>" title="Edit Nilai">UAS</a></th>
                     <th>NA</th>
                     <th>KETERANGAN</th>
                   </tr>
@@ -92,14 +92,16 @@
                   <tr>
                     <th>NIS</th>
                     <th>NAMA LENGKAP</th>
-                    <th>T1</th>
-                    <th>T2</th>
-                    <th>UH1</th>
-                    <th>UH2</th>
-                    <th>UH3</th>
-                    <th>UH4</th>
-                    <th>UTS</th>
-                    <th>UAS</th>
+                    <th><a href="<?=base_url('/nilai/input/bahasa_jawa/x_ipa_1')?>" title="Edit Nilai">T1</a></th>
+                    <th><a href="<?=base_url('/nilai/input/bahasa_jawa/x_ipa_1')?>" title="Edit Nilai">T2</a></th>
+                    <th><a href="<?=base_url('/nilai/input/bahasa_jawa/x_ipa_1')?>" title="Edit Nilai">UH1</a></th>
+                    <th><a href="<?=base_url('/nilai/input/bahasa_jawa/x_ipa_1')?>" title="Edit Nilai">UH2</a></th>
+                    <th><a href="<?=base_url('/nilai/input/bahasa_jawa/x_ipa_1')?>" title="Edit Nilai">UH3</a></th>
+                    <th><a href="<?=base_url('/nilai/input/bahasa_jawa/x_ipa_1')?>" title="Edit Nilai">UH4</a></th>
+                    <th><a href="<?=base_url('/nilai/input/bahasa_jawa/x_ipa_1')?>" title="Edit Nilai">UTS</a></th>
+                    <th><a href="<?=base_url('/nilai/input/bahasa_jawa/x_ipa_1')?>" title="Edit Nilai">UAS</a></th>
+                    <th>NA</th>
+                    <th>KETERANGAN</th>
                   </tr>
                 </tfoot>
               </table>

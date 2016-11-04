@@ -26,4 +26,14 @@ Class Nilai extends CI_Controller {
 		$this->load->view("/layouts/app", $data);
 	}
 
+	public function lihat($id_m, $id_k) {
+		$data = array(
+			"id" => $id_m,
+			"title" => "LIHAT - NILAI",
+			"navigation" => "guru_mata_pelajaran",
+			"container" => "/guru/nilai/lihat"
+		);
+		$this->load->view("/layouts/app", $data);
+	}
+
 }

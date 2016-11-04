@@ -118,6 +118,8 @@
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu">
         
+        <?php if ($this->session->userdata('user') == "admin") { ?>
+
         <li class="header">MAIN NAVIGATION</li>
         
         <li <?php if ($navigation == "home") echo "class='active'"?>>
@@ -165,7 +167,9 @@
           </ul>
         </li>
 
-        <li class="header">AKSES GURU NAVIGATION</li>
+        <?php } else if ($this->session->userdata('user') == "guru") { ?>
+
+        <li class="header">MAIN NAVIGATION</li>
         
         <li <?php if ($navigation == "guru_home") echo "class='active'"?>>
           <a href="<?=base_url('/home/guru')?>">
@@ -175,29 +179,115 @@
         <li class="treeview <?php if ($navigation == "guru_mata_pelajaran") echo "active"?>">
           <a href="">
             <i class="fa fa-book"></i>
-            <span>MATA PELAJARAN</span>
+            <span>NILAI</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<?=base_url('/nilai/QmFoYXNhIEphd2E.html')?>"><i class="fa fa-circle-o"></i> BAHASA JAWA</a></li>
-            <li><a href="<?=base_url('/nilai/QmFoYXNhIEplcm1hbg.html')?>"><i class="fa fa-circle-o"></i> BAHASA JERMAN</a></li>
+            <li class="treeview">
+              <a href="">
+                <i class="fa fa-circle-o"></i> BAHASA JAWA
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+              <ul class="treeview-menu">
+                <li class="treeview">
+                  <a href="">
+                    <i class="fa fa-arrow-circle-right"></i> X IPA 1
+                    <span class="pull-right-container">
+                      <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                  </a>
+                  <ul class="treeview-menu">
+                    <li>
+                      <a href="<?=base_url("/nilai/input/bahasa_jawa/x_ipa_1")?>">
+                        <i class="fa fa-angle-double-right"></i> MASUKAN NILAI
+                      </a>
+                    </li>
+                    <li>
+                      <a href="<?=base_url("/nilai/lihat/bahasa_jawa/x_ipa_1")?>">
+                        <i class="fa fa-angle-double-right"></i> LIHAT NILAI
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="treeview">
+                  <a href="">
+                    <i class="fa fa-arrow-circle-right"></i> X IPA 2
+                    <span class="pull-right-container">
+                      <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                  </a>
+                  <ul class="treeview-menu">
+                    <li>
+                      <a href="<?=base_url("/nilai/input/bahasa_jawa/x_ipa_2")?>">
+                        <i class="fa fa-angle-double-right"></i> MASUKAN NILAI
+                      </a>
+                    </li>
+                    <li>
+                      <a href="<?=base_url("/nilai/lihat/bahasa_jawa/x_ipa_2")?>">
+                        <i class="fa fa-angle-double-right"></i> LIHAT NILAI
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="treeview">
+              <a href="">
+                <i class="fa fa-circle-o"></i> BAHASA JERMAN
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+              <ul class="treeview-menu">
+                <li class="treeview">
+                  <a href="">
+                    <i class="fa fa-arrow-circle-right"></i> XI IPA 1
+                    <span class="pull-right-container">
+                      <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                  </a>
+                  <ul class="treeview-menu">
+                    <li>
+                      <a href="<?=base_url("/nilai/QmFoYXNhIEphd2E/input/WCBJUEEgMQ.html")?>">
+                        <i class="fa fa-angle-double-right"></i> MASUKAN NILAI
+                      </a>
+                    </li>
+                    <li>
+                      <a href="<?=base_url("/nilai/lihat/bahasa_jawa/x_ipa_1")?>">
+                        <i class="fa fa-angle-double-right"></i> LIHAT NILAI
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="treeview">
+                  <a href="">
+                    <i class="fa fa-arrow-circle-right"></i> XI IPA 2
+                    <span class="pull-right-container">
+                      <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                  </a>
+                  <ul class="treeview-menu">
+                    <li>
+                      <a href="<?=base_url("/nilai/QmFoYXNhIEphd2E/input/WCBJUEEgMQ.html")?>">
+                        <i class="fa fa-angle-double-right"></i> MASUKAN NILAI
+                      </a>
+                    </li>
+                    <li>
+                      <a href="<?=base_url("/nilai/lihat/bahasa_jawa/x_ipa_2")?>">
+                        <i class="fa fa-angle-double-right"></i> LIHAT NILAI
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
           </ul>
         </li>
-        <li class="treeview <?php if ($navigation == "guru_laporan") echo "active"?>">
-          <a href="">
-            <i class="fa fa-pie-chart"></i>
-            <span>LAPORAN</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="<?=base_url('/laporan/nilai.html')?>"><i class="fa fa-circle-o"></i> DATA NILAI</a></li>
-          </ul>
-        </li>
-
+        <?php } ?>
       </ul>
     </section>
     <!-- /.sidebar -->

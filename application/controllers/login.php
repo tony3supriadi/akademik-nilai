@@ -10,4 +10,10 @@ Class Login extends CI_Controller {
 		$this->load->view("login.php");
 	}
 
+	public function action_login() {
+		$username = $this->input->post("username");
+		$this->session->set_userdata(array("user" => $username));
+		redirect();
+	}
+
 }
